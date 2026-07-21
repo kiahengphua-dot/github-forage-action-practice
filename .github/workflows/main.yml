@@ -10,4 +10,5 @@ jobs:
 
     steps:
       - name: Display variable
-        run: echo "Message: ${{ vars.GREETING }}"
+        run: |
+          echo "Message: ${{ vars.GREETING }}"
