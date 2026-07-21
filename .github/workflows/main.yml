@@ -1,0 +1,13 @@
+name: Forage First Workflow
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test-variable:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display variable
+        run: echo "Message: ${{ vars.GREETING }}"
